@@ -5,11 +5,42 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lesson</title>
+  <!-- icons -->
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <!-- icons -->
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- fonts -->
   <link rel="stylesheet" href="css/flexboxgrid.min.css">
   <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
-
+  <div class="container">
+    <div class="weather">
+      <div class="weather-wrapper">
+        <div class="weather__forms">
+          <form class="weather__form">
+            <input class="weather__inp" type="text" placeholder="Enter Country">
+            <span class="weather__search"><button class="btn"><i class='bx bx-search-alt-2'></i></button></span>
+          </form>
+          <div class="weather__info between-md">
+            <div class="weather__infos">
+              <p class="weather__country-text tex"><span class="country">Country: </span><span class="weather__country-res"></span></p>
+              <p class="weather__humidity-text tex"><span class="weather__humidity">Humidity:  </span> <span class="weather__humidity-res"></span></p>
+              <p class="weather__wind-text tex"><span class="weather__wind">Wind speed:  </span> <span class="weather__wind-res"></span></p>
+            </div>
+            <div class="weather__graduss">
+              <p class="weather__gradus tex"><span class="weather__gradus">Temp: </span> <span class="weather__gradus-res"></span><sup class="weather__gradus-icon"></sup></p>
+              <img class="weather__img" src="" alt="">
+              <p class="tex"><span class="weather__dess">Description: </span> <span class="weather__des"></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="js/main.js"></script>
 </body>
 </html>
