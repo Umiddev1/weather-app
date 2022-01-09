@@ -2,7 +2,6 @@ let elForm = document.querySelector('.weather__form');
 let elInp = document.querySelector('.weather__inp');
 let elSearch = document.querySelector('.weather__search');
 let api_key = "fdface970e3c36a5fef6fa02fb3755cb";
-let city = "Tashkent";
 elForm.addEventListener("submit", (e) => {
   e.preventDefault();
   if(elInp.value === "") {
@@ -23,5 +22,4 @@ elForm.addEventListener("submit", (e) => {
         elInp.value = "";
     });
   }
-  
 })
